@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================= */
+/* 🎨 PALETA BASE (MODO CLARO)   */
+/* ============================= */
+:root {
+  --color-bg: #f8fafc; /* Fondo claro */
+  --color-text: #0f172a; /* Texto oscuro */
+  --color-primary: #2563eb; /* Azul principal */
+  --color-secondary: #1e3a8a; /* Azul profundo */
+  --color-border: #dbeafe; /* Azul muy suave para bordes */
+}
+
+/* ============================= */
+/* 🌙 PALETA MODO OSCURO (.dark) */
+/* ============================= */
+.dark {
+  --color-bg: #0b1220; /* Fondo oscuro elegante */
+  --color-text: #e5e7eb; /* Texto claro */
+  --color-primary: #60a5fa; /* Azul brillante */
+  --color-secondary: #93c5fd; /* Azul suave */
+  --color-border: rgba(30, 64, 175, 0.3); /* Azul translúcido para bordes */
+}
+
+/* ============================= */
+/* 🧱 ESTRUCTURA GLOBAL          */
+/* ============================= */
+body {
+  @apply bg-[var(--color-bg)] text-[var(--color-text)] font-[Poppins] antialiased;
+}
+
+/* Limita ancho máximo para pantallas grandes */
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* ============================= */
+/* 🔘 BOTONES                    */
+/* ============================= */
+.btn-primary {
+  @apply bg-[var(--color-primary)] text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-[var(--color-secondary)] transition-all;
+}
+
+.btn-outline {
+  @apply border border-[var(--color-primary)] text-[var(--color-primary)] px-6 py-3 rounded-lg font-semibold hover:bg-[var(--color-primary)] hover:text-white transition-all;
+}
+
+/* Ajuste responsivo de botones */
+@media (max-width: 640px) {
+  .btn-primary,
+  .btn-outline {
+    @apply w-full text-center text-sm py-2.5;
+  }
+}
+
+/* ============================= */
+/* 🧩 TARJETAS                   */
+/* ============================= */
+.card {
+  @apply bg-white dark:bg-[#0f172a] shadow-sm hover:shadow-md rounded-xl p-6 transition-all duration-200;
+}
+
+@media (max-width: 640px) {
+  .card {
+    @apply p-4 text-sm;
+  }
+}
+
+/* ============================= */
+/* 🏷️ ENCABEZADOS               */
+/* ============================= */
+h1,
+h2,
+h3 {
+  @apply font-semibold text-[var(--color-secondary)];
+}
+
+/* Escalado responsivo de títulos */
+h1 {
+  @apply text-4xl sm:text-5xl lg:text-6xl leading-tight;
+}
+
+h2 {
+  @apply text-2xl sm:text-3xl lg:text-4xl;
+}
+
+h3 {
+  @apply text-xl sm:text-2xl;
+}
+
+/* ============================= */
+/* ⚙️ SECCIÓN DE TECNOLOGÍAS    */
+/* ============================= */
+.tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.tech:hover {
+  transform: translateY(-6px) scale(1.05);
+  color: var(--color-primary);
+}
+
+.tech p {
+  font-size: 0.85rem;
+  color: var(--color-text);
+  opacity: 0.85;
+  margin-top: 4px;
+}
+
+@media (max-width: 640px) {
+  .tech {
+    gap: 0.5rem;
+  }
+  .tech p {
+    font-size: 0.8rem;
+  }
+}
+
+/* ============================= */
+/* 📅 TIMELINE Y CONTENIDO       */
+/* ============================= */
+.border-l-4 {
+  border-left-width: 4px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.shadow-md {
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.15);
+}
+
+/* Timeline responsive */
+@media (max-width: 768px) {
+  .timeline {
+    @apply border-l-2 pl-4;
+  }
+}
+
+/* ============================= */
+/* 🪄 TRANSICIONES GLOBALES      */
+/* ============================= */
+html,
+body,
+#root {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+* {
+  transition-property: color, background-color, border-color, fill, stroke;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+/* ============================= */
+/* ✨ SCROLLBAR PERSONALIZADA    */
+/* ============================= */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-secondary);
+}
+
+/* ============================= */
+/* 📱 OPTIMIZACIONES MOBILE      */
+/* ============================= */
+@media (max-width: 480px) {
+  body {
+    @apply text-sm;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  footer {
+    @apply text-xs;
+  }
+}
+
+/* ============================= */
+/* 💻 OPTIMIZACIONES DESKTOP XL  */
+/* ============================= */
+@media (min-width: 1440px) {
+  body {
+    @apply text-base;
+  }
+
+  .container {
+    @apply max-w-6xl;
+  }
+
+  h1 {
+    @apply text-6xl;
+  }
+}
+/* === Líneas divisorias entre secciones === */
+section {
+  border-top: 1px solid var(--color-border);
+}
+
+/* En modo oscuro, refuerza la visibilidad */
+.dark section {
+  border-top: 1px solid rgba(147, 197, 253, 0.15); /* azul tenue */
+}
+
+/* Evita que la línea del footer o navbar se duplique */
+footer,
+nav {
+  border-top: none !important;
+  border-bottom: none !important;
+}

@@ -1,0 +1,55 @@
+[
+  {
+    "title": "Ingeniero de Certificación y Resiliencia de Sistemas (QA)",
+    "company": "Banco del Austro",
+    "date": "Enero 2025 – Actualidad · Cuenca, Ecuador",
+    "desc": "Encargado del aseguramiento de la calidad de sistemas mediante pruebas automatizadas y manuales. Implementación de planes de test funcionales y de rendimiento, optimizando la confiabilidad del software financiero.",
+    "logo": "/assets/bda.png",
+    "responsibilities": [
+      "Diseñar y ejecutar pruebas funcionales y de regresión automatizadas.",
+      "Implementar pruebas de carga y estrés en servicios críticos.",
+      "Colaborar con DevOps para la integración continua y despliegues controlados."
+    ],
+    "achievements": [
+      "Automatización de los casos funcionales en entornos críticos.",
+      "Reducción de tiempos de validación post‐deploy.",
+      "Participación en auditorías de resiliencia de sistemas con la Superintendencia."
+    ],
+    "technologies": ["Python", "Selenium", "Postman", "JMeter", "Jenkins", "GitLab CI/CD"]
+  },
+  {
+    "title": "Desarrollador Full Stack",
+    "company": "Cinch Realty Group Inc",
+    "date": "2023 – 2024 · Estados Unidos (Remoto)",
+    "desc": "Diseño e implementación de sitios web y herramientas de IA orientadas a la automatización del servicio al cliente.",
+    "logo": "/assets/cinch.png",
+    "responsibilities": [
+      "Desarrollo de interfaces web con React y Tailwind CSS.",
+      "Implementación de APIs con Node.js y Express.",
+      "Integración de chatbots y asistentes IA para atención al cliente."
+    ],
+    "achievements": [
+      "Optimización del rendimiento de front-end reduciendo tiempos de carga.",
+      "Desarrollo del dashboard de métricas utilizado por el equipo directivo.",
+      "Implementación de pipelines CI/CD para despliegue automatizado."
+    ],
+    "technologies": ["React", "Node.js", "Tailwind", "MongoDB", "OpenAI API", "AWS"]
+  },
+  {
+    "title": "Pasante de Ingeniería de Desarrollo",
+    "company": "Banco del Austro",
+    "date": "Abril 2023 – Agosto 2023 · Cuenca, Ecuador",
+    "desc": "Apoyé en el desarrollo de componentes backend, integración de servicios y automatización de procesos internos.",
+    "logo": "/assets/bda.png",
+    "responsibilities": [
+      "Apoyo en desarrollo de microservicios en Java y Spring Boot.",
+      "Implementación de scripts SQL para validación de integridad de datos.",
+      "Documentación técnica de módulos desarrollados."
+    ],
+    "achievements": [
+      "Reconocido por el área de Tecnología por la automatización de reportes internos.",
+      "Desarrollo de pruebas unitarias con JUnit para servicios críticos."
+    ],
+    "technologies": ["Java", "Spring Boot", "Oracle DB", "Git", "Maven"]
+  }
+]

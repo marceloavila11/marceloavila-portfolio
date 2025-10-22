@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Universitat Oberta de Catalunya (UOC)",
+    "subtitle": "Máster en Ciencia de Datos",
+    "date": "2024 – Actualidad",
+    "logo": "/logos/uoc.png"
+  }, 
+  {
+    "title": "Universidad de Cuenca",
+    "subtitle": "Introducción a la Ciencia de Datos – 3er Periodo Académico",
+    "date": "Feb – Mar 2024",
+    "logo": "/logos/u_cuenca.png"
+  },
+  {
+    "title": "Universidad Nacional de Colombia",
+    "subtitle": "Data Science & Machine Learning Volunteer",
+    "date": "Ago – Sep 2023",
+    "logo": "/logos/u_colombia.png"
+  },
+  {
+    "title": "Universidad de Cuenca",
+    "subtitle": "Ingeniería en Ciencias de la Computación",
+    "date": "2018 – 2024",
+    "logo": "/logos/u_cuenca.png"
+  }
+    
+]

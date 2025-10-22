@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Peliz",
+    "desc": "Sitio web para buscar películas y series, mostrando tráiler, puntuación y fecha de lanzamiento.",
+    "tech": ["React", "HTML", "CSS", "JavaScript"]
+  },
+  {
+    "title": "PalacioSoft",
+    "desc": "Plataforma web para creación de landing pages y tiendas online personalizadas.",
+    "tech": ["Angular", "HTML", "CSS", "JS"]
+  },
+  {
+    "title": "Integración con Kushki",
+    "desc": "API de prueba que simula una pasarela de pagos con tarjeta de crédito.",
+    "tech": ["React", "Node.js", "GitHub"]
+  }
+]

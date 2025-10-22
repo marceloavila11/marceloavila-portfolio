@@ -1,0 +1,83 @@
+[
+  {
+    "title": "Introducing Generative AI with AWS",
+    "issuer": "Udacity",
+    "date": "May 2025",
+    "skills": ["AWS", "IA", "Machine Learning"],
+    "logo": "/logos/udacity.png",
+    "credentialUrl": "https://www.udacity.com/certificate/e/3a009828-4de8-11f0-a8cf-ebdb4b29ecff",
+    "where": "home"
+  },
+  {
+    "title": "Full Stack - Legacy",
+    "issuer": "freeCodeCamp",
+    "date": "Ene 2025",
+    "skills": ["Full-Stack Development", "Front-End", "Back-End", "Data Visualization"],
+    "logo": "/logos/freecodecamp.png",
+    "credentialUrl": "https://www.freecodecamp.org/certification/marcelo11avila/full-stack",
+    "where": "home"
+  },
+  {
+    "title": "Fundamentals: Data, Data, Everywhere",
+    "issuer": "Google",
+    "date": "Ene 2025",
+    "skills": ["Data Analytics", "Data Foundations"],
+    "logo": "/logos/google.png",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/S6408ME4ZCXU",
+    "where": "home"
+  },
+  {
+    "title": "Developing Front-End Apps with React",
+    "issuer": "IBM",
+    "date": "Oct 2023",
+    "skills": ["React", "Front-End Development"],
+    "logo": "/logos/ibm.png",
+    "credentialUrl": "https://coursera.org/share/8362bfd3a9f6b1d52a35a33b48986443",
+    "where": "cert"
+  },
+  {
+    "title": "Specialization in Looker Studio & Data Studio",
+    "issuer": "Udemy",
+    "date": "Ene 2025",
+    "skills": ["Business Intelligence", "Data Visualization", "Data-Driven Insights"],
+    "logo": "/logos/udemy.png",
+    "credentialUrl": "https://www.udemy.com/certificate/UC-02d93044-e1bd-47db-a0be-c54b60516c64/",
+    "where": "cert"
+  },
+  {
+    "title": "Quarkus Framework: Agile Microservices & APIs",
+    "issuer": "Udemy",
+    "date": "Jun 2023",
+    "skills": ["Java", "Spring Boot", "Kubernetes", "Microservices"],
+    "logo": "/logos/udemy.png",
+    "credentialUrl": "https://www.udemy.com/certificate/UC-1606f9b1-c1ef-47ba-a7a5-a2e4149be7d8/",
+    "where": "cert"
+  },
+  {
+    "title": "Legacy Data Visualization",
+    "issuer": "freeCodeCamp",
+    "date": "Dic 2024",
+    "skills": ["Data Visualization", "Dashboards"],
+    "logo": "/logos/freecodecamp.png",
+    "credentialUrl": "https://www.freecodecamp.org/certification/marcelo11avila/legacy-data-visualization",
+    "where": "cert"
+  },
+  {
+    "title": "Cloud Computing",
+    "issuer": "Google Actívate",
+    "date": "Ene 2023",
+    "skills": ["Cloud Computing", "Infrastructure"],
+    "logo": "/logos/google.png",
+    "credentialUrl": "https://learndigital.withgoogle.com/link/1nur091p2ww",
+    "where": "cert"
+  },
+  {
+    "title": "Ethical Hacking",
+    "issuer": "HackerMentor",
+    "date": "Mar 2023",
+    "skills": ["Cybersecurity"],
+    "logo": "/logos/hackermentor.png",
+    "credentialUrl": "https://drive.google.com/file/d/1q3v0EKR9S2pIiokzXcH9ms4lbpxjlPTy/view?usp=sharing",
+    "where": "cert"
+  }
+]
