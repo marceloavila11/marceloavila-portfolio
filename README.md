@@ -1,16 +1,97 @@
-# React + Vite
+# 🚀 Portafolio Profesional — Marcelo Avila
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este portafolio fue desarrollado con **React + Vite + TailwindCSS**, combinando animaciones con **Framer Motion** y un diseño limpio, adaptable y profesional.  
+Su objetivo es reflejar la experiencia, proyectos y trayectoria profesional de **Marcelo Avila**, Ingeniero en Ciencias de la Computación y Máster en Ciencia de Datos.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 Tecnologías utilizadas
 
-## React Compiler
+- ⚛️ **React + Vite** — interfaz moderna, ligera y modular.  
+- 🎨 **TailwindCSS** — diseño responsivo y consistente.  
+- ✨ **Framer Motion** — animaciones suaves y profesionales.  
+- 🌗 **Dark/Light Mode** — manejo de tema persistente.  
+- 🧩 **React Router DOM** — navegación entre secciones.  
+- 🧰 **React Icons** — íconos de redes y tecnología.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📂 Estructura principal
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+
+src/
+┣ components/        → Navbar, Footer, ScrollToTop, etc.
+┣ pages/             → Home, Perfil, Experiencia, Proyectos, Contacto
+┣ data/              → JSON con educación, experiencia, certificaciones
+┣ assets/            → Logos, imágenes e íconos
+┗ App.jsx            → Rutas principales
+
+````
+
+---
+
+## 💻 Instalación y uso local
+
+Clona el repositorio y ejecuta:
+
+```bash
+git clone https://github.com/marceloavila11/marceloavila-portfolio.git
+cd marceloavila-portfolio
+npm install
+npm run dev
+````
+
+Luego abre en el navegador:
+👉 [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🌍 Publicación en GitHub Pages
+
+1. Instala el paquete de despliegue:
+
+   ```bash
+   npm install gh-pages --save-dev
+   ```
+
+2. En `package.json`, agrega:
+
+   ```json
+   "homepage": "https://marceloavila11.github.io/marceloavila-portfolio",
+   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d dist"
+   }
+   ```
+
+3. Ejecuta:
+
+   ```bash
+   npm run deploy
+   ```
+
+Tu portafolio quedará publicado en:
+➡️ **[https://marceloavila11.github.io/marceloavila-portfolio](https://marceloavila11.github.io/marceloavila-portfolio)**
+
+---
+
+## 📸 Características principales
+
+* 💼 Secciones de **perfil, experiencia, proyectos y contacto.**
+* 🌐 Diseño **totalmente responsivo** (desktop / tablet / móvil).
+* ☁️ Preparado para integración con **AWS o CI/CD pipelines.**
+* 🔁 Botón flotante de “Volver arriba”.
+* 📄 Descarga directa de CV.
+
+---
+
+## 🧑‍💻 Autor
+
+**Marcelo Avila**
+📍 Cuenca, Ecuador
+📧 [marcelo11avila@gmail.com](mailto:marcelo11avila@gmail.com)
+🔗 [LinkedIn](https://linkedin.com/in/marcelo11avila) | [GitHub](https://github.com/marceloavila11)
+
+
+
