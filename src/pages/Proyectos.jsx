@@ -1,76 +1,89 @@
+import { motion } from "framer-motion";
+import * as FaIcons from "react-icons/fa";
+import projectsData from "../data/projects.json";
+import ImageCarousel from "../components/ImageCarousel"; // ✅ ya lo importas aquí
+
 export default function Proyectos() {
-  const proyectos = [
-    {
-      nombre: "Sistema de Evaluación Crediticia",
-      descripcion:
-        "Modelo predictivo que analiza el perfil del cliente y genera un puntaje crediticio en base a variables históricas y comportamiento transaccional. Implementado con herramientas de machine learning.",
-      tecnologias: ["Python", "Scikit-learn", "PostgreSQL", "Power BI"],
-      link: "https://github.com/tuusuario/evaluacion-crediticia",
-    },
-    {
-      nombre: "Dashboard de Certificación de Software",
-      descripcion:
-        "Plataforma de monitoreo que centraliza indicadores de pruebas, incidencias y tiempos de despliegue, optimizando la trazabilidad de QA en entornos bancarios.",
-      tecnologias: ["React", "TailwindCSS", "D3.js", "FastAPI"],
-      link: "https://github.com/tuusuario/dashboard-certificacion",
-    },
-    {
-      nombre: "API de Automatización de Pruebas",
-      descripcion:
-        "Servicio REST diseñado para ejecutar suites de prueba automatizadas, almacenar resultados y generar reportes dinámicos integrados a Jenkins y Slack.",
-      tecnologias: ["Node.js", "Express", "MongoDB", "Jenkins API"],
-      link: "https://github.com/tuusuario/api-automatizacion",
-    },
-    {
-      nombre: "Proyecto DataScience UOC",
-      descripcion:
-        "Análisis exploratorio y modelado predictivo sobre datasets reales de consumo energético, desarrollado como parte del máster en Ciencia de Datos.",
-      tecnologias: ["Python", "Pandas", "Matplotlib", "Jupyter"],
-      link: "https://github.com/tuusuario/proyecto-uoc",
-    },
-  ];
+  const iconMap = {
+    React: FaIcons.FaReact,
+    TypeScript: FaIcons.FaCode,
+    JavaScript: FaIcons.FaJsSquare,
+    Python: FaIcons.FaPython,
+    FastAPI: FaIcons.FaServer,
+    TailwindCSS: FaIcons.FaWind,
+    MongoDB: FaIcons.FaLeaf,
+    "scikit-learn": FaIcons.FaBrain,
+    SHAP: FaIcons.FaBrain,
+    MLflow: FaIcons.FaFlask,
+    Docker: FaIcons.FaDocker,
+    AWS: FaIcons.FaAws,
+    "AWS ECS": FaIcons.FaAws,
+    "Azure DevOps API": FaIcons.FaMicrosoft,
+    Prometheus: FaIcons.FaChartLine,
+    Grafana: FaIcons.FaChartPie,
+    Pandas: FaIcons.FaDatabase,
+    Plotly: FaIcons.FaChartBar
+  };
 
   return (
-    <section className="min-h-screen py-16">
-      <h1 className="text-4xl font-bold text-primary mb-10 text-center">
-        Proyectos Destacados
-      </h1>
+    <div className="bg-[var(--color-bg)] font-sans transition-colors duration-500">
+      <motion.section
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="bg-[var(--color-bg)] py-20"
+      >
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-[var(--color-secondary)] mb-12 text-center">
+            Proyectos del Portafolio
+          </h2>
 
-      <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        {proyectos.map((proyecto, i) => (
-          <div
-            key={i}
-            className="bg-surface p-6 rounded-xl shadow-md hover:shadow-lg border border-transparent hover:border-primary/40 transition"
-          >
-            <h2 className="text-2xl font-bold text-primary mb-2">
-              {proyecto.nombre}
-            </h2>
-            <p className="text-muted mb-4">{proyecto.descripcion}</p>
-
-            <div className="flex flex-wrap gap-2 mb-4">
-              {proyecto.tecnologias.map((tech) => (
-                <span
-                  key={tech}
-                  className="bg-primary/20 text-primary text-sm px-3 py-1 rounded-full"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-
-            {proyecto.link && (
-              <a
-                href={proyecto.link}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {projectsData.map((proj, i) => (
+              <motion.a
+                key={i}
+                href={proj.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-2 text-sm font-semibold text-secondary hover:text-primary transition"
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+                whileHover={{ scale: 1.03 }}
+                className="relative bg-white rounded-2xl shadow-md hover:shadow-2xl 
+                           p-6 flex flex-col justify-between border border-blue-100 
+                           text-gray-800 overflow-hidden min-h-[480px] transition-all duration-500"
               >
-                Ver en GitHub →
-              </a>
-            )}
+                {/* ✅ Usa el componente externo */}
+                <ImageCarousel proj={proj} height="h-56" zoom={true} />
+
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-[var(--color-primary)] mb-3">
+                    {proj.title}
+                  </h3>
+                  <p className="text-gray-700 mb-6 text-sm leading-relaxed text-justify">
+                    {proj.desc}
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap gap-2 mt-auto">
+                  {proj.tech.map((t, j) => {
+                    const Icon = iconMap[t] || FaIcons.FaCode;
+                    return (
+                      <span
+                        key={j}
+                        className="flex items-center gap-2 bg-blue-100 text-blue-800 px-3 py-1 text-sm rounded-full font-medium"
+                      >
+                        <Icon className="text-blue-700" />
+                        {t}
+                      </span>
+                    );
+                  })}
+                </div>
+              </motion.a>
+            ))}
           </div>
-        ))}
-      </div>
-    </section>
+        </div>
+      </motion.section>
+    </div>
   );
 }

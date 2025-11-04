@@ -1,17 +1,56 @@
 [
   {
-    "title": "Peliz",
-    "desc": "Sitio web para buscar películas y series, mostrando tráiler, puntuación y fecha de lanzamiento.",
-    "tech": ["React", "HTML", "CSS", "JavaScript"]
+    "title": "FinScope AI",
+    "desc": "Plataforma de análisis financiero inteligente que combina visualización avanzada, IA generativa y análisis de tendencias. Desarrollada con React, TypeScript y Vite en el frontend y FastAPI en el backend. Incluye recomendaciones inteligentes, resúmenes automáticos y predicciones de ahorro.",
+    "tech": ["FastAPI", "React", "TypeScript", "MongoDB", "TailwindCSS", "AWS", "OpenAI API"],
+    "url": "https://github.com/marceloavila11/FinScope-AI",
+    "image1": "/projects/finscope1.png",
+    "image2": "/projects/finscope2.png",
+    "image3": "/projects/finscope3.png"
   },
   {
-    "title": "PalacioSoft",
-    "desc": "Plataforma web para creación de landing pages y tiendas online personalizadas.",
-    "tech": ["Angular", "HTML", "CSS", "JS"]
+    "title": "CloudOps Vision",
+    "desc": "Plataforma de observabilidad y despliegue inteligente en entornos cloud. Implementa monitoreo centralizado con Prometheus y Grafana, despliegues automatizados con Docker y Kubernetes, y alertas proactivas mediante IA ligera.",
+    "tech": ["Docker", "Kubernetes", "Prometheus", "Grafana", "Python", "React", "AWS ECS"],
+    "url": "https://github.com/marceloavila11/CloudOps-Vision",
+    "image1": "/projects/cloudops1.png",
+    "image2": "/projects/cloudops2.png",
+    "image3": "/projects/cloudops3.png"
   },
   {
-    "title": "Integración con Kushki",
-    "desc": "API de prueba que simula una pasarela de pagos con tarjeta de crédito.",
-    "tech": ["React", "Node.js", "GitHub"]
+    "title": "CreditIQ",
+    "desc": "Motor de evaluación de riesgo crediticio con explicabilidad de modelos (XAI). Utiliza pipelines MLOps para entrenar, validar y desplegar modelos de clasificación crediticia, proporcionando interpretabilidad con SHAP y monitoreo con MLflow.",
+    "tech": ["Python", "FastAPI", "scikit-learn", "SHAP", "MLflow", "React"],
+    "url": "https://github.com/marceloavila11/CreditIQ",
+    "image1": "/projects/creditiq1.png",
+    "image2": "/projects/creditiq2.png",
+    "image3": "/projects/creditiq3.png"
+  },
+  {
+    "title": "QA Insight",
+    "desc": "Sistema predictivo de calidad continua que combina analítica de datos, automatización QA y visualización de métricas desde Azure DevOps. Permite analizar defectos, cobertura y tendencias mediante dashboards inteligentes.",
+    "tech": ["Python", "FastAPI", "React", "Azure DevOps API", "Pandas", "Plotly"],
+    "url": "https://github.com/marceloavila11/QA-Insight",
+    "image1": "/projects/qainsight1.png",
+    "image2": "/projects/qainsight2.png",
+    "image3": "/projects/qainsight3.png"
+  },
+  {
+    "title": "DataScope",
+    "desc": "Dashboard interactivo de analítica de datos con soporte para carga de archivos CSV, visualizaciones dinámicas y estadísticas básicas. Está diseñado para mostrar integración de React con librerías de visualización y Python (FastAPI + Pandas) para análisis rápido.",
+    "tech": ["FastAPI", "React", "Pandas", "Plotly", "TypeScript"],
+    "url": "https://github.com/marceloavila11/DataScope",
+    "image1": "/projects/datascope1.png",
+    "image2": "/projects/datascope2.png",
+    "image3": "/projects/datascope3.png"
+  },
+  {
+    "title": "TaskPilot",
+    "desc": "Aplicación web minimalista de gestión de tareas con autenticación JWT, CRUD completo y almacenamiento persistente en MongoDB. Su objetivo es demostrar principios sólidos de arquitectura REST y buenas prácticas de seguridad en FastAPI y React.",
+    "tech": ["FastAPI", "React", "TypeScript", "MongoDB", "TailwindCSS"],
+    "url": "https://github.com/marceloavila11/TaskPilot",
+    "image1": "/projects/taskpilot1.png",
+    "image2": "/projects/taskpilot2.png",
+    "image3": "/projects/taskpilot3.png"
   }
 ]

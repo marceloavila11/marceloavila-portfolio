@@ -85,7 +85,7 @@ export default function Perfil() {
           <img
             src="/profile.png"
             alt="Marcelo Avila"
-            className="w-64 h-64 rounded-full border-4 border-blue-200 shadow-lg object-cover"
+            className="w-80 h-80 rounded-full border-4 border-blue-200 shadow-lg object-cover"
           />
         </motion.div>
       </motion.section>

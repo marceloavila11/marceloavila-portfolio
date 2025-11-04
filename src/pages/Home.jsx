@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import * as FaIcons from "react-icons/fa";
 
-// === Importa los datos externos ===
+
 import experienceData from "../data/experience.json";
 import educationData from "../data/education.json";
 import certificationsData from "../data/certifications.json";
 import projectsData from "../data/projects.json";
 import technologiesData from "../data/technologies.json";
+import ImageCarousel from "../components/ImageCarousel";
 
 export default function Home() {
     return (
@@ -60,7 +61,7 @@ export default function Home() {
                     <img
                         src="/profile.png"
                         alt="Foto de Marcelo Avila"
-                        className="w-64 h-64 rounded-full border-4 border-blue-200 shadow-lg object-cover"
+                        className="w-80 h-80 rounded-full border-4 border-blue-200 shadow-lg object-cover"
                     />
                 </motion.div>
             </motion.section>
@@ -137,7 +138,7 @@ export default function Home() {
 
 
 
-            {/* ===== PROYECTOS ===== */}
+            {/* ===== PROYECTOS ===== */}            
             <motion.section
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -148,21 +149,34 @@ export default function Home() {
                     <h2 className="text-3xl font-bold text-[var(--color-secondary)] mb-12 text-center">
                         Proyectos Destacados
                     </h2>
+
                     <div className="grid md:grid-cols-3 gap-8">
-                        {projectsData.map((proj, i) => (
-                            <motion.div
+                        {projectsData.slice(0, 3).map((proj, i) => (
+                            <motion.a
                                 key={i}
+                                href={proj.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                                className="bg-white rounded-xl shadow hover:shadow-lg p-6 transition flex flex-col justify-between"
+                                whileHover={{ scale: 1.03 }}
+                                className="bg-white rounded-xl shadow hover:shadow-xl p-5 flex flex-col justify-between border border-blue-100 text-gray-800 overflow-hidden transition-all duration-500"
                             >
+                                {/* Imagen con efecto hover */}
+                                <ImageCarousel proj={proj} />
+
                                 <div>
-                                    <h3 className="text-xl font-bold text-[var(--color-primary)] mb-2">{proj.title}</h3>
-                                    <p className="text-slate-600 mb-4">{proj.desc}</p>
+                                    <h3 className="text-xl font-bold text-[var(--color-primary)] mb-2">
+                                        {proj.title}
+                                    </h3>
+                                    <p className="text-gray-700 mb-4 text-sm leading-relaxed text-justify">
+                                        {proj.desc}
+                                    </p>
                                 </div>
+
                                 <div className="flex flex-wrap gap-2 mt-auto">
-                                    {proj.tech.map((t, j) => (
+                                    {proj.tech.slice(0, 4).map((t, j) => (
                                         <span
                                             key={j}
                                             className="bg-blue-100 text-blue-800 px-3 py-1 text-sm rounded-full font-medium"
@@ -171,15 +185,18 @@ export default function Home() {
                                         </span>
                                     ))}
                                 </div>
-                            </motion.div>
+                            </motion.a>
                         ))}
                     </div>
 
                     <div className="text-center mt-12">
-                        <Link to="/proyectos" className="btn-primary">Ver más proyectos</Link>
+                        <Link to="/proyectos" className="btn-primary">
+                            Ver más proyectos
+                        </Link>
                     </div>
                 </div>
             </motion.section>
+
 
             {/* ===== TECNOLOGÍAS ===== */}
             <motion.section
@@ -307,7 +324,7 @@ export default function Home() {
                     </div>
                 </div>
             </motion.section>
-            
+
         </div>
     );
 }
