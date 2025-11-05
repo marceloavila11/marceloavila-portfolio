@@ -8,14 +8,12 @@ export default function Navbar() {
   const [theme, setTheme] = useState("light");
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Carga el tema guardado
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") || "light";
     setTheme(savedTheme);
     document.documentElement.classList.toggle("dark", savedTheme === "dark");
   }, []);
 
-  // Cambia tema claro/oscuro
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
@@ -23,7 +21,6 @@ export default function Navbar() {
     document.documentElement.classList.toggle("dark", newTheme === "dark");
   };
 
-  // Cierra el menú al cambiar de ruta
   useEffect(() => {
     setMenuOpen(false);
   }, [location.pathname]);
@@ -38,7 +35,6 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full h-[72px] bg-white/70 dark:bg-slate-900/80 backdrop-blur-md border-b border-blue-100 dark:border-slate-700 z-50 shadow-sm transition-all duration-500">
       <div className="max-w-6xl mx-auto flex justify-between items-center h-full px-6">
-        {/* --- LOGO --- */}
         <Link to="/" className="flex items-center gap-3 group">
           <div className="p-1.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-white/70 dark:bg-slate-800/70 shadow-sm">
             <img
@@ -52,7 +48,6 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* --- MENÚ DESKTOP --- */}
         <ul className="hidden md:flex space-x-8 font-medium text-slate-700 dark:text-slate-200">
           {navLinks.map((item) => (
             <li key={item.path}>
@@ -70,9 +65,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* --- ACCIONES (CV + THEME + BURGER) --- */}
         <div className="flex items-center gap-3">
-          {/* Descargar CV */}
           <a
             href="/marceloavilaCV.pdf"
             download
@@ -81,7 +74,6 @@ export default function Navbar() {
             Descargar CV
           </a>
 
-          {/* Switch tema */}
           <div
             onClick={toggleTheme}
             className={`relative w-14 h-7 flex items-center cursor-pointer rounded-full px-1 transition-colors duration-500 ${
@@ -107,7 +99,6 @@ export default function Navbar() {
             </motion.div>
           </div>
 
-          {/* Botón menú hamburguesa */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="md:hidden text-slate-700 dark:text-slate-200 text-xl focus:outline-none"
@@ -118,7 +109,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* --- MENÚ MÓVIL DESPLEGABLE --- */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div

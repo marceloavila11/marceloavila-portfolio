@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 export default function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Detecta el scroll y muestra/oculta el botón
   useEffect(() => {
     const handleScroll = () => {
       setIsVisible(window.scrollY > 300);
@@ -14,7 +13,6 @@ export default function ScrollToTopButton() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Subir suavemente al inicio
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };

@@ -6,7 +6,6 @@ export default function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    // Desplazamiento suave al inicio cada vez que cambia la ruta
     window.scrollTo({
       top: 0,
       behavior: "smooth",

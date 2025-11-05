@@ -19,7 +19,6 @@ export default function Experiencia() {
 
       <div className="max-w-6xl mx-auto">
 
-        {/* === LÍNEA DE TIEMPO === */}
         <div className="relative border-l-2 border-blue-300 ml-3 sm:ml-5">
           {experienceData.map((exp, i) => (
             <motion.div
@@ -29,12 +28,9 @@ export default function Experiencia() {
               transition={{ duration: 0.4, delay: i * 0.1 }}
               className="relative mb-14 pl-8 sm:pl-10"
             >
-              {/* === PUNTO CENTRAL === */}
               <span className="absolute -left-[0.55rem] top-6 w-4 h-4 bg-blue-600 rounded-full border-[3px] border-[var(--color-bg)] shadow-md"></span>
 
-              {/* === CONTENIDO PRINCIPAL === */}
               <div className="flex flex-col sm:flex-row items-start gap-6">
-                {/* LOGO */}
                 <div className="w-full sm:w-40 h-24 flex items-center justify-center 
                 bg-white border border-blue-100 dark:border-blue-200/40 
                 rounded-xl shadow-sm shrink-0 overflow-hidden">
@@ -47,7 +43,6 @@ export default function Experiencia() {
                   />
                 </div>
 
-                {/* TEXTO */}
                 <div className="flex-1 min-w-[250px]">
                   <h3 className="text-lg sm:text-xl font-bold text-[var(--color-primary)] mb-1 leading-snug">
                     {exp.title}{" "}
@@ -60,14 +55,12 @@ export default function Experiencia() {
                     {exp.date}
                   </p>
 
-                  {/* Descripción */}
                   <div className="min-h-[80px]">
                     <p className="text-[var(--color-text)]/80 leading-relaxed text-justify text-sm sm:text-base">
                       {exp.desc}
                     </p>
                   </div>
 
-                  {/* Responsabilidades */}
                   {exp.responsibilities && (
                     <div className="mt-4">
                       <h4 className="font-semibold text-[var(--color-secondary)] mb-2">
@@ -81,7 +74,6 @@ export default function Experiencia() {
                     </div>
                   )}
 
-                  {/* Logros */}
                   {exp.achievements && (
                     <div className="mt-4">
                       <h4 className="font-semibold text-[var(--color-secondary)] mb-2">
@@ -95,7 +87,6 @@ export default function Experiencia() {
                     </div>
                   )}
 
-                  {/* Tecnologías */}
                   {exp.technologies && (
                     <div className="flex flex-wrap gap-2 mt-4">
                       {exp.technologies.map((tech, j) => (

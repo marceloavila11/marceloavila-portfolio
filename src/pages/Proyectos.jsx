@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import * as FaIcons from "react-icons/fa";
 import projectsData from "../data/projects.json";
-import ImageCarousel from "../components/ImageCarousel"; // ✅ ya lo importas aquí
+import ImageCarousel from "../components/ImageCarousel";
 
 export default function Proyectos() {
   const iconMap = {
@@ -53,8 +53,7 @@ export default function Proyectos() {
                            p-6 flex flex-col justify-between border border-blue-100 
                            text-gray-800 overflow-hidden min-h-[480px] transition-all duration-500"
               >
-                {/* ✅ Usa el componente externo */}
-                <ImageCarousel proj={proj} height="h-56" zoom={true} />
+                <ImageCarousel proj={proj} height="aspect-[16/9]" zoom={true} />
 
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-[var(--color-primary)] mb-3">

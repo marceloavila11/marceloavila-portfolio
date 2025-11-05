@@ -20,9 +20,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#0f172a] text-gray-300 border-t border-blue-700/30 py-10 px-6 text-sm">
-      {/* ===== CONTENIDO PRINCIPAL ===== */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center md:text-left items-start">
-        {/* === CONTACTO === */}
         <div>
           <h3 className="text-base font-semibold text-blue-400 flex items-center justify-center md:justify-start gap-2 mb-3">
             <FaEnvelope className="text-blue-400" /> Contacto
@@ -47,7 +45,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* === REDES SOCIALES === */}
         <div>
           <h3 className="text-base font-semibold text-blue-400 flex items-center justify-center md:justify-start gap-2 mb-3">
             Redes Sociales
@@ -73,7 +70,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* === ENLACES DE INTERÉS === */}
         <div>
           <h3 className="text-base font-semibold text-blue-400 flex items-center justify-center md:justify-start gap-2 mb-3">
             Links de interés
@@ -107,7 +103,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* ===== LÍNEA INFERIOR ===== */}
       <div className="mt-8 border-t border-blue-800/30 pt-4 text-center text-xs text-gray-400">
         <p className="flex items-center justify-center gap-2 flex-wrap leading-relaxed">
           Hecho con <FaHeart className="text-red-500" /> · <FaMapMarkerAlt /> Cuenca, Ecuador ·{" "}

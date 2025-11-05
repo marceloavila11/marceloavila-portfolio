@@ -14,7 +14,6 @@ export default function Home() {
     return (
         <div className="bg-[var(--color-bg)] text-[var(--color-text)] font-sans">
 
-            {/* ===== HERO ===== */}
             <motion.section
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -66,7 +65,6 @@ export default function Home() {
                 </motion.div>
             </motion.section>
 
-            {/* ===== EXPERIENCIA PROFESIONAL ===== */}
             <motion.section
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -78,7 +76,6 @@ export default function Home() {
                         Experiencia Profesional
                     </h2>
 
-                    {/* Timeline */}
                     <div className="relative border-l-2 border-blue-300 ml-5">
                         {experienceData.map((exp, i) => (
                             <motion.div
@@ -88,11 +85,9 @@ export default function Home() {
                                 transition={{ duration: 0.4, delay: i * 0.1 }}
                                 className="relative mb-14 pl-10"
                             >
-                                {/* Punto centrado en la línea */}
                                 <span className="absolute -left-[0.55rem] top-6 w-4 h-4 bg-blue-600 rounded-full border-[3px] border-[var(--color-bg)] shadow-md"></span>
 
                                 <div className="flex flex-col sm:flex-row items-start gap-6">
-                                    {/* Logo: fondo SIEMPRE blanco */}
                                     <div className="w-40 h-24 flex items-center justify-center bg-white border border-blue-100 rounded-xl shadow-sm shrink-0">
                                         <img
                                             src={exp.logo}
@@ -104,7 +99,6 @@ export default function Home() {
                                     </div>
 
 
-                                    {/* Información */}
                                     <div className="flex-1 min-w-[250px]">
                                         <h3 className="text-lg font-bold text-[var(--color-primary)] leading-tight mb-1">
                                             {exp.title}{" "}
@@ -126,7 +120,6 @@ export default function Home() {
                         ))}
                     </div>
 
-                    {/* Botón final */}
                     <div className="text-center mt-12">
                         <Link to="/experiencia" className="btn-primary">
                             Conocer más
@@ -138,7 +131,6 @@ export default function Home() {
 
 
 
-            {/* ===== PROYECTOS ===== */}            
             <motion.section
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -163,7 +155,6 @@ export default function Home() {
                                 whileHover={{ scale: 1.03 }}
                                 className="bg-white rounded-xl shadow hover:shadow-xl p-5 flex flex-col justify-between border border-blue-100 text-gray-800 overflow-hidden transition-all duration-500"
                             >
-                                {/* Imagen con efecto hover */}
                                 <ImageCarousel proj={proj} />
 
                                 <div>
@@ -198,7 +189,6 @@ export default function Home() {
             </motion.section>
 
 
-            {/* ===== TECNOLOGÍAS ===== */}
             <motion.section
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -243,7 +233,6 @@ export default function Home() {
             </motion.section>
 
 
-            {/* ===== EDUCACIÓN Y CERTIFICACIONES ===== */}
             <motion.section
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}

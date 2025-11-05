@@ -12,7 +12,6 @@ export default function Contacto() {
                  bg-[var(--color-bg)] text-[var(--color-text)] 
                  py-20 sm:py-24 px-4 sm:px-6 transition-colors duration-500"
     >
-      {/* --- Título --- */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -28,7 +27,6 @@ export default function Contacto() {
         </p>
       </motion.div>
 
-      {/* --- Tarjeta principal --- */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -38,7 +36,6 @@ export default function Contacto() {
                    rounded-2xl shadow-md border border-[var(--color-border)] 
                    py-10 sm:py-12 px-5 sm:px-10 text-center backdrop-blur-sm transition-colors duration-500"
       >
-        {/* --- Botones principales --- */}
         <div className="flex flex-wrap justify-center gap-4 sm:gap-6 w-full">
           <a
             href="mailto:marcelo11avila@gmail.com"
@@ -64,7 +61,6 @@ export default function Contacto() {
           </a>
         </div>
 
-        {/* --- Redes sociales --- */}
         <div className="text-center w-full">
           <h3 className="text-lg font-semibold mb-4 text-[var(--color-text)]">
             También puedes encontrarme en:
@@ -94,7 +90,6 @@ export default function Contacto() {
           </div>
         </div>
 
-        {/* --- Estado de disponibilidad --- */}
         <div className="flex items-center justify-center gap-2 text-sm sm:text-base text-[var(--color-text)] mt-4">
           <span className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></span>
           Disponible para colaboraciones

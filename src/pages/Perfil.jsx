@@ -24,7 +24,6 @@ export default function Perfil() {
 
   return (
     <div className="bg-[var(--color-bg)] text-[var(--color-text)] font-sans">
-      {/* ===== PERFIL ===== */}
       <motion.section
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -32,7 +31,6 @@ export default function Perfil() {
         viewport={{ once: true }}
         className="max-w-6xl mx-auto px-4 sm:px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center scroll-mt-[90px]"
       >
-        {/* Texto */}
         <div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-[var(--color-secondary)] mb-4 text-center md:text-left">
             Perfil
@@ -75,7 +73,6 @@ export default function Perfil() {
           </p>
         </div>
 
-        {/* Foto */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -90,7 +87,6 @@ export default function Perfil() {
         </motion.div>
       </motion.section>
 
-      {/* ===== UNIVERSIDAD ===== */}
       <motion.section
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -142,7 +138,6 @@ export default function Perfil() {
         </div>
       </motion.section>
 
-      {/* ===== CERTIFICACIONES ===== */}
       <motion.section
         id="certificaciones"
         initial={{ opacity: 0, y: 30 }}

@@ -4,43 +4,30 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ============================= */
-/* 🎨 PALETA BASE (MODO CLARO)   */
-/* ============================= */
 :root {
-  --color-bg: #f8fafc; /* Fondo claro */
-  --color-text: #0f172a; /* Texto oscuro */
-  --color-primary: #2563eb; /* Azul principal */
-  --color-secondary: #1e3a8a; /* Azul profundo */
-  --color-border: #dbeafe; /* Azul muy suave para bordes */
+  --color-bg: #f8fafc; 
+  --color-text: #0f172a; 
+  --color-primary: #2563eb; 
+  --color-secondary: #1e3a8a; 
+  --color-border: #dbeafe;
 }
 
-/* ============================= */
-/* 🌙 PALETA MODO OSCURO (.dark) */
-/* ============================= */
 .dark {
-  --color-bg: #0b1220; /* Fondo oscuro elegante */
-  --color-text: #e5e7eb; /* Texto claro */
-  --color-primary: #60a5fa; /* Azul brillante */
-  --color-secondary: #93c5fd; /* Azul suave */
-  --color-border: rgba(30, 64, 175, 0.3); /* Azul translúcido para bordes */
+  --color-bg: #0b1220; 
+  --color-text: #e5e7eb; 
+  --color-primary: #60a5fa; 
+  --color-secondary: #93c5fd; 
+  --color-border: rgba(30, 64, 175, 0.3); 
 }
 
-/* ============================= */
-/* 🧱 ESTRUCTURA GLOBAL          */
-/* ============================= */
 body {
   @apply bg-[var(--color-bg)] text-[var(--color-text)] font-[Poppins] antialiased;
 }
 
-/* Limita ancho máximo para pantallas grandes */
 .container {
   @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
 
-/* ============================= */
-/* 🔘 BOTONES                    */
-/* ============================= */
 .btn-primary {
   @apply bg-[var(--color-primary)] text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-[var(--color-secondary)] transition-all;
 }
@@ -49,7 +36,6 @@ body {
   @apply border border-[var(--color-primary)] text-[var(--color-primary)] px-6 py-3 rounded-lg font-semibold hover:bg-[var(--color-primary)] hover:text-white transition-all;
 }
 
-/* Ajuste responsivo de botones */
 @media (max-width: 640px) {
   .btn-primary,
   .btn-outline {
@@ -57,9 +43,6 @@ body {
   }
 }
 
-/* ============================= */
-/* 🧩 TARJETAS                   */
-/* ============================= */
 .card {
   @apply bg-white dark:bg-[#0f172a] shadow-sm hover:shadow-md rounded-xl p-6 transition-all duration-200;
 }
@@ -70,16 +53,12 @@ body {
   }
 }
 
-/* ============================= */
-/* 🏷️ ENCABEZADOS               */
-/* ============================= */
 h1,
 h2,
 h3 {
   @apply font-semibold text-[var(--color-secondary)];
 }
 
-/* Escalado responsivo de títulos */
 h1 {
   @apply text-4xl sm:text-5xl lg:text-6xl leading-tight;
 }
@@ -92,9 +71,6 @@ h3 {
   @apply text-xl sm:text-2xl;
 }
 
-/* ============================= */
-/* ⚙️ SECCIÓN DE TECNOLOGÍAS    */
-/* ============================= */
 .tech {
   display: flex;
   flex-direction: column;
@@ -124,9 +100,6 @@ h3 {
   }
 }
 
-/* ============================= */
-/* 📅 TIMELINE Y CONTENIDO       */
-/* ============================= */
 .border-l-4 {
   border-left-width: 4px;
 }
@@ -139,16 +112,12 @@ h3 {
   box-shadow: 0 2px 8px rgba(37, 99, 235, 0.15);
 }
 
-/* Timeline responsive */
 @media (max-width: 768px) {
   .timeline {
     @apply border-l-2 pl-4;
   }
 }
 
-/* ============================= */
-/* 🪄 TRANSICIONES GLOBALES      */
-/* ============================= */
 html,
 body,
 #root {
@@ -161,9 +130,6 @@ body,
   transition-timing-function: ease;
 }
 
-/* ============================= */
-/* ✨ SCROLLBAR PERSONALIZADA    */
-/* ============================= */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -177,9 +143,6 @@ body,
   background-color: var(--color-secondary);
 }
 
-/* ============================= */
-/* 📱 OPTIMIZACIONES MOBILE      */
-/* ============================= */
 @media (max-width: 480px) {
   body {
     @apply text-sm;
@@ -199,9 +162,6 @@ body,
   }
 }
 
-/* ============================= */
-/* 💻 OPTIMIZACIONES DESKTOP XL  */
-/* ============================= */
 @media (min-width: 1440px) {
   body {
     @apply text-base;
@@ -215,17 +175,14 @@ body,
     @apply text-6xl;
   }
 }
-/* === Líneas divisorias entre secciones === */
 section {
   border-top: 1px solid var(--color-border);
 }
 
-/* En modo oscuro, refuerza la visibilidad */
 .dark section {
-  border-top: 1px solid rgba(147, 197, 253, 0.15); /* azul tenue */
+  border-top: 1px solid rgba(147, 197, 253, 0.15); 
 }
 
-/* Evita que la línea del footer o navbar se duplique */
 footer,
 nav {
   border-top: none !important;

@@ -45,12 +45,12 @@
     "image3": "/projects/datascope3.png"
   },
   {
-    "title": "TaskPilot",
-    "desc": "Aplicación web minimalista de gestión de tareas con autenticación JWT, CRUD completo y almacenamiento persistente en MongoDB. Su objetivo es demostrar principios sólidos de arquitectura REST y buenas prácticas de seguridad en FastAPI y React.",
-    "tech": ["FastAPI", "React", "TypeScript", "MongoDB", "TailwindCSS"],
-    "url": "https://github.com/marceloavila11/TaskPilot",
-    "image1": "/projects/taskpilot1.png",
-    "image2": "/projects/taskpilot2.png",
-    "image3": "/projects/taskpilot3.png"
-  }
+  "title": "TaskPilot",
+  "desc": "Aplicación web full stack para la gestión de tareas, desarrollada con Flask y Vue 3. Incluye autenticación JWT, CRUD completo, persistencia en SQLite y despliegue con Docker. Demuestra principios de arquitectura REST, diseño limpio de API y buenas prácticas de seguridad en entornos modernos de desarrollo web.",
+  "tech": ["Flask", "Vue 3", "JavaScript", "SQLite", "TailwindCSS", "Docker"],
+  "url": "https://github.com/marceloavila11/TaskPilot",
+  "image1": "/projects/taskpilot1.png",
+  "image2": "/projects/taskpilot2.png",
+  "image3": "/projects/taskpilot3.png"
+}
 ]

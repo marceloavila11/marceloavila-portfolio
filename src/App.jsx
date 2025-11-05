@@ -13,13 +13,8 @@ export default function App() {
   return (
     <div className="flex flex-col min-h-screen font-sans bg-[var(--color-bg)] text-[var(--color-text)] transition-colors duration-500">
       <Router>
-        {/* ===== NAVBAR ===== */}
         <Navbar />
-
-        {/* ===== CONTROL DE SCROLL ===== */}
         <ScrollToTop />
-
-        {/* ===== CONTENIDO PRINCIPAL ===== */}
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -29,11 +24,7 @@ export default function App() {
             <Route path="/contacto" element={<Contacto />} />
           </Routes>
         </main>
-
-        {/* ===== FOOTER ===== */}
         <Footer />
-
-        {/* ===== BOTÓN FLOTANTE “VOLVER ARRIBA” ===== */}
         <ScrollToTopButton />
       </Router>
     </div>
