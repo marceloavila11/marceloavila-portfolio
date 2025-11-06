@@ -1,28 +1,69 @@
 import { motion } from "framer-motion";
 import * as FaIcons from "react-icons/fa";
+import * as SiIcons from "react-icons/si";
+import * as VscIcons from "react-icons/vsc";
 import projectsData from "../data/projects.json";
 import ImageCarousel from "../components/ImageCarousel";
+import * as RiIcons from "react-icons/ri";
 
 export default function Proyectos() {
   const iconMap = {
+    // --- FRONTEND ---
     React: FaIcons.FaReact,
-    TypeScript: FaIcons.FaCode,
+    "Next.js": SiIcons.SiNextdotjs,
+    Vue: FaIcons.FaVuejs,
+    "Vue.js": FaIcons.FaVuejs,
+    "Vue 3": FaIcons.FaVuejs,
+    Angular: FaIcons.FaAngular,
+    TypeScript: SiIcons.SiTypescript,
     JavaScript: FaIcons.FaJsSquare,
+    TailwindCSS: SiIcons.SiTailwindcss,
+    Bootstrap: FaIcons.FaBootstrap,
+    Sass: FaIcons.FaSass,
+    Vite: SiIcons.SiVite,
+
+    // --- BACKEND ---
     Python: FaIcons.FaPython,
-    FastAPI: FaIcons.FaServer,
-    TailwindCSS: FaIcons.FaWind,
-    MongoDB: FaIcons.FaLeaf,
-    "scikit-learn": FaIcons.FaBrain,
+    FastAPI: SiIcons.SiFastapi,
+    Flask: SiIcons.SiFlask,
+    Java: FaIcons.FaJava,
+    Node: FaIcons.FaNodeJs,
+    "Node.js": FaIcons.FaNodeJs,
+    "Spring Boot": SiIcons.SiSpringboot,
+    SQL: FaIcons.FaDatabase,
+    "SQL / NoSQL": FaIcons.FaDatabase,
+    MongoDB: SiIcons.SiMongodb,
+    SQLite: SiIcons.SiSqlite,
+    APIs: FaIcons.FaServer,
+    REST: FaIcons.FaServer,
+
+    // --- DATA SCIENCE / AI ---
+    Pandas: SiIcons.SiPandas,
+    Plotly: SiIcons.SiPlotly,
+    "scikit-learn": SiIcons.SiScikitlearn,
     SHAP: FaIcons.FaBrain,
-    MLflow: FaIcons.FaFlask,
+    MLflow: SiIcons.SiMlflow,
+    "Gemini API": RiIcons.RiGeminiFill,    
+    Gemini: RiIcons.RiGeminiFill,
+    AI: SiIcons.SiOpenai,
+    "Data Science": SiIcons.SiDatabricks,
+
+    // --- DEVOPS / CLOUD ---
     Docker: FaIcons.FaDocker,
     AWS: FaIcons.FaAws,
     "AWS ECS": FaIcons.FaAws,
-    "Azure DevOps API": FaIcons.FaMicrosoft,
-    Prometheus: FaIcons.FaChartLine,
-    Grafana: FaIcons.FaChartPie,
-    Pandas: FaIcons.FaDatabase,
-    Plotly: FaIcons.FaChartBar
+    Kubernetes: SiIcons.SiKubernetes,
+    Prometheus: SiIcons.SiPrometheus,
+    Grafana: SiIcons.SiGrafana,
+    "Azure DevOps API": VscIcons.VscAzureDevops,
+    "Azure DevOps": VscIcons.VscAzureDevops,
+    GitLab: FaIcons.FaGitlab,
+    GitHub: FaIcons.FaGithub,
+    "CI/ CD": FaIcons.FaCogs,
+
+    // --- DISEÑO / VISUAL ---
+    Figma: FaIcons.FaFigma,
+    "UI/UX": FaIcons.FaPencilRuler
   };
 
   return (
@@ -66,7 +107,11 @@ export default function Proyectos() {
 
                 <div className="flex flex-wrap gap-2 mt-auto">
                   {proj.tech.map((t, j) => {
-                    const Icon = iconMap[t] || FaIcons.FaCode;
+                    const Icon =
+                      iconMap[t] ||
+                      iconMap[t.split(" ")[0]] ||
+                      FaIcons.FaCode;
+
                     return (
                       <span
                         key={j}

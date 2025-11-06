@@ -3,21 +3,37 @@
     { "name": "HTML5", "icon": "FaHtml5" },
     { "name": "CSS3", "icon": "FaCss3Alt" },
     { "name": "JavaScript", "icon": "FaJsSquare" },
+    { "name": "TypeScript", "icon": "SiTypescript" },
     { "name": "React", "icon": "FaReact" },
-    { "name": "Angular", "icon": "FaAngular" }
+    { "name": "Next.js", "icon": "SiNextdotjs" },
+    { "name": "Vue.js", "icon": "FaVuejs" },
+    { "name": "Angular", "icon": "FaAngular" },
+    { "name": "Astro", "icon": "SiAstro" },
+    { "name": "Vite", "icon": "SiVite" },
+    { "name": "TailwindCSS", "icon": "SiTailwindcss" }
   ],
+
   "backend": [
     { "name": "Python", "icon": "FaPython" },
     { "name": "Java", "icon": "FaJava" },
     { "name": "Node.js", "icon": "FaNodeJs" },
-    { "name": "SQL / NoSQL", "icon": "FaDatabase" },
+    { "name": "Spring Boot", "icon": "SiSpringboot" },
+    { "name": "Flask", "icon": "SiFlask" },
+    { "name": "FastAPI", "icon": "SiFastapi" },
+    { "name": "PostgreSQL", "icon": "SiPostgresql" },
+    { "name": "MySQL", "icon": "SiMysql" },
+    { "name": "MongoDB", "icon": "SiMongodb" },
+    { "name": "SQLite", "icon": "SiSqlite" },
     { "name": "APIs / REST", "icon": "FaServer" }
   ],
+
   "devops": [
-    { "name": "Docker", "icon": "FaDocker" },
     { "name": "AWS", "icon": "FaAws" },
+    { "name": "Docker", "icon": "FaDocker" },
+    { "name": "Azure DevOps", "icon": "VscAzureDevops" },
     { "name": "Git", "icon": "FaGitAlt" },
-    { "name": "GitLab", "icon": "FaGitlab" },
+    { "name": "GitHub Actions", "icon": "SiGithubactions" },
+    { "name": "GitLab CI/CD", "icon": "FaGitlab" },
     { "name": "Cloud", "icon": "FaCloud" },
     { "name": "CI/CD", "icon": "FaCogs" },
     { "name": "Bash / CLI", "icon": "FaTerminal" }

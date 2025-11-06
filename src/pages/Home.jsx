@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import * as FaIcons from "react-icons/fa";
-
+import * as SiIcons from "react-icons/si";
+import * as VscIcons from "react-icons/vsc";
 
 import experienceData from "../data/experience.json";
 import educationData from "../data/education.json";
@@ -212,7 +213,7 @@ export default function Home() {
 
                                 <div className="flex flex-wrap justify-center gap-6 text-5xl">
                                     {techs.map((t, i) => {
-                                        const Icon = FaIcons[t.icon];
+                                        const Icon = FaIcons[t.icon] || SiIcons[t.icon] || VscIcons[t.icon];
                                         return (
                                             <motion.div
                                                 key={i}
