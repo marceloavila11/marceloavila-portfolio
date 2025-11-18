@@ -1,0 +1,14 @@
+<svg width="180" height="180" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Marco minimal -->
+  <rect x="22" y="22" width="156" height="156" rx="14" stroke="#FFFFFF" stroke-width="10" fill="none"></rect>
+
+  <!-- M abstracta futurista (bloques flotantes) -->
+  <rect x="60" y="70" width="24" height="60" rx="4" fill="#4A55FF"></rect>
+  <rect x="116" y="70" width="24" height="60" rx="4" fill="#4A55FF"></rect>
+
+  <!-- Conector central minimalista -->
+  <rect x="92" y="100" width="16" height="30" rx="4" fill="#FFFFFF"></rect>
+
+  <!-- Línea técnica inferior -->
+  <line x1="70" y1="150" x2="130" y2="150" stroke="#4A55FF" stroke-width="4" stroke-linecap="round"></line>
+</svg>

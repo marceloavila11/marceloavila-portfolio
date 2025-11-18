@@ -168,7 +168,7 @@ export default function Home() {
                                 </div>
 
                                 <div className="flex flex-wrap gap-2 mt-auto">
-                                    {proj.tech.slice(0, 4).map((t, j) => (
+                                    {proj.tech.slice(0, 5).map((t, j) => (
                                         <span
                                             key={j}
                                             className="bg-blue-100 text-blue-800 px-3 py-1 text-sm rounded-full font-medium"

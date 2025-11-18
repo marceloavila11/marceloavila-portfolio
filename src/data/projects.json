@@ -1,8 +1,17 @@
 [
   {
+    "title": "QualiLife AI",
+    "desc": "Plataforma de inteligencia global para analizar bienestar, desarrollo humano e indicadores multidimensionales asistidos por IA. Incluye mapa interactivo, análisis comparativo, resumen generado por modelos generativos y visualización de indicadores clave.",
+    "tech": ["FastAPI", "Astro", "IA Generativa", "MongoDB", "AWS", "TypeScript", "TailwindCSS", "Python","Docker"],
+    "url": "https://github.com/marceloavila11/QualiLife-AI",
+    "image1": "/projects/qualilife1.png",
+    "image2": "/projects/qualilife2.png",
+    "image3": "/projects/qualilife3.png"
+  },
+  {
     "title": "FinScope AI",
     "desc": "Plataforma de análisis financiero inteligente que combina visualización avanzada, IA generativa y análisis de tendencias. Desarrollada con React, TypeScript y Vite en el frontend y FastAPI en el backend. Incluye recomendaciones inteligentes, resúmenes automáticos y predicciones de ahorro.",
-    "tech": ["FastAPI", "React", "TypeScript", "MongoDB", "TailwindCSS", "AWS", "Gemini API"],
+    "tech": ["FastAPI", "React", "TypeScript", "MongoDB", "Gemini API", "TailwindCSS", "AWS"],
     "url": "https://github.com/marceloavila11/FinScope-AI",
     "image1": "/projects/finscope1.png",
     "image2": "/projects/finscope2.png",
@@ -45,12 +54,12 @@
     "image3": "/projects/datascope3.png"
   },
   {
-  "title": "TaskPilot",
-  "desc": "Aplicación web full stack para la gestión de tareas, desarrollada con Flask y Vue 3. Incluye autenticación JWT, CRUD completo, persistencia en SQLite y despliegue con Docker. Demuestra principios de arquitectura REST, diseño limpio de API y buenas prácticas de seguridad en entornos modernos de desarrollo web.",
-  "tech": ["Flask", "Vue 3", "JavaScript", "SQLite", "TailwindCSS", "Docker"],
-  "url": "https://github.com/marceloavila11/TaskPilot",
-  "image1": "/projects/taskpilot1.png",
-  "image2": "/projects/taskpilot2.png",
-  "image3": "/projects/taskpilot3.png"
-}
+    "title": "TaskPilot",
+    "desc": "Aplicación web full stack para la gestión de tareas, desarrollada con Flask y Vue 3. Incluye autenticación JWT, CRUD completo, persistencia en SQLite y despliegue con Docker. Demuestra principios de arquitectura REST, diseño limpio de API y buenas prácticas de seguridad en entornos modernos de desarrollo web.",
+    "tech": ["Flask", "Vue 3", "JavaScript", "SQLite", "TailwindCSS", "Docker"],
+    "url": "https://github.com/marceloavila11/TaskPilot",
+    "image1": "/projects/taskpilot1.png",
+    "image2": "/projects/taskpilot2.png",
+    "image3": "/projects/taskpilot3.png"
+  }
 ]

@@ -15,6 +15,7 @@ export default function Proyectos() {
     "Vue.js": FaIcons.FaVuejs,
     "Vue 3": FaIcons.FaVuejs,
     Angular: FaIcons.FaAngular,
+    Astro: SiIcons.SiAstro,
     TypeScript: SiIcons.SiTypescript,
     JavaScript: FaIcons.FaJsSquare,
     TailwindCSS: SiIcons.SiTailwindcss,
@@ -34,8 +35,8 @@ export default function Proyectos() {
     "SQL / NoSQL": FaIcons.FaDatabase,
     MongoDB: SiIcons.SiMongodb,
     SQLite: SiIcons.SiSqlite,
-    APIs: FaIcons.FaServer,
     REST: FaIcons.FaServer,
+    APIs: FaIcons.FaServer,
 
     // --- DATA SCIENCE / AI ---
     Pandas: SiIcons.SiPandas,
@@ -43,9 +44,10 @@ export default function Proyectos() {
     "scikit-learn": SiIcons.SiScikitlearn,
     SHAP: FaIcons.FaBrain,
     MLflow: SiIcons.SiMlflow,
-    "Gemini API": RiIcons.RiGeminiFill,    
+    "Gemini API": RiIcons.RiGeminiFill,
     Gemini: RiIcons.RiGeminiFill,
-    AI: SiIcons.SiOpenai,
+    "IA Generativa": RiIcons.RiGeminiFill,
+    "OpenAI API": SiIcons.SiOpenai,
     "Data Science": SiIcons.SiDatabricks,
 
     // --- DEVOPS / CLOUD ---
@@ -59,12 +61,13 @@ export default function Proyectos() {
     "Azure DevOps": VscIcons.VscAzureDevops,
     GitLab: FaIcons.FaGitlab,
     GitHub: FaIcons.FaGithub,
-    "CI/ CD": FaIcons.FaCogs,
+    "CI/CD": FaIcons.FaCogs,
 
     // --- DISEÑO / VISUAL ---
     Figma: FaIcons.FaFigma,
     "UI/UX": FaIcons.FaPencilRuler
   };
+
 
   return (
     <div className="bg-[var(--color-bg)] font-sans transition-colors duration-500">

@@ -38,7 +38,7 @@ export default function Navbar() {
         <Link to="/" className="flex items-center gap-3 group">
           <div className="p-1.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-white/70 dark:bg-slate-800/70 shadow-sm">
             <img
-              src="/assets/home.png"
+              src="/assets/icon.svg"
               alt="Logo"
               className="w-8 h-8 object-contain group-hover:scale-110 transition-transform"
             />
@@ -53,11 +53,10 @@ export default function Navbar() {
             <li key={item.path}>
               <Link
                 to={item.path}
-                className={`relative py-1 after:content-[''] after:absolute after:w-0 after:h-[2px] after:left-0 after:-bottom-0.5 after:bg-[var(--color-primary)] after:transition-all after:duration-300 hover:after:w-full ${
-                  location.pathname === item.path
+                className={`relative py-1 after:content-[''] after:absolute after:w-0 after:h-[2px] after:left-0 after:-bottom-0.5 after:bg-[var(--color-primary)] after:transition-all after:duration-300 hover:after:w-full ${location.pathname === item.path
                     ? "text-[var(--color-primary)] after:w-full font-semibold"
                     : "hover:text-[var(--color-primary)]"
-                }`}
+                  }`}
               >
                 {item.label}
               </Link>
@@ -76,9 +75,8 @@ export default function Navbar() {
 
           <div
             onClick={toggleTheme}
-            className={`relative w-14 h-7 flex items-center cursor-pointer rounded-full px-1 transition-colors duration-500 ${
-              theme === "dark" ? "bg-yellow-400" : "bg-slate-400"
-            }`}
+            className={`relative w-14 h-7 flex items-center cursor-pointer rounded-full px-1 transition-colors duration-500 ${theme === "dark" ? "bg-yellow-400" : "bg-slate-400"
+              }`}
           >
             <motion.div
               animate={{
@@ -123,11 +121,10 @@ export default function Navbar() {
                 <li key={item.path}>
                   <Link
                     to={item.path}
-                    className={`block text-lg ${
-                      location.pathname === item.path
+                    className={`block text-lg ${location.pathname === item.path
                         ? "text-[var(--color-primary)] font-semibold"
                         : "hover:text-[var(--color-primary)]"
-                    }`}
+                      }`}
                   >
                     {item.label}
                   </Link>
