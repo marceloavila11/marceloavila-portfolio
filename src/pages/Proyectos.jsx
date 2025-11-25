@@ -19,6 +19,7 @@ export default function Proyectos() {
     TypeScript: SiIcons.SiTypescript,
     JavaScript: FaIcons.FaJsSquare,
     TailwindCSS: SiIcons.SiTailwindcss,
+    "Tailwind CSS": SiIcons.SiTailwindcss, // Agregado por si usas espacio
     Bootstrap: FaIcons.FaBootstrap,
     Sass: FaIcons.FaSass,
     Vite: SiIcons.SiVite,
@@ -31,9 +32,12 @@ export default function Proyectos() {
     Node: FaIcons.FaNodeJs,
     "Node.js": FaIcons.FaNodeJs,
     "Spring Boot": SiIcons.SiSpringboot,
+    Express: SiIcons.SiExpress,       // ✅ NUEVO
     SQL: FaIcons.FaDatabase,
     "SQL / NoSQL": FaIcons.FaDatabase,
     MongoDB: SiIcons.SiMongodb,
+    PostgreSQL: SiIcons.SiPostgresql, // ✅ NUEVO
+    Supabase: SiIcons.SiSupabase,     // ✅ NUEVO
     SQLite: SiIcons.SiSqlite,
     REST: FaIcons.FaServer,
     APIs: FaIcons.FaServer,
@@ -49,6 +53,8 @@ export default function Proyectos() {
     "IA Generativa": RiIcons.RiGeminiFill,
     "OpenAI API": SiIcons.SiOpenai,
     "Data Science": SiIcons.SiDatabricks,
+    "Predictive ML": FaIcons.FaBrain, // ✅ NUEVO (Usamos cerebro para ML predictivo)
+    "TensorFlow.js": SiIcons.SiTensorflow, // ✅ NUEVO
 
     // --- DEVOPS / CLOUD ---
     Docker: FaIcons.FaDocker,
@@ -62,6 +68,9 @@ export default function Proyectos() {
     GitLab: FaIcons.FaGitlab,
     GitHub: FaIcons.FaGithub,
     "CI/CD": FaIcons.FaCogs,
+    Vercel: SiIcons.SiVercel,
+    Render: SiIcons.SiRender,
+    "Vercel / Render": SiIcons.SiVercel,
 
     // --- DISEÑO / VISUAL ---
     Figma: FaIcons.FaFigma,

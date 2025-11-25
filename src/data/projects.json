@@ -1,62 +1,200 @@
 [
   {
-    "title": "QualiLife AI",
-    "desc": "Plataforma de inteligencia global para analizar bienestar, desarrollo humano e indicadores multidimensionales asistidos por IA. Incluye mapa interactivo, análisis comparativo, resumen generado por modelos generativos y visualización de indicadores clave.",
-    "tech": ["FastAPI", "Astro", "IA Generativa", "MongoDB", "AWS", "TypeScript", "TailwindCSS", "Python","Docker"],
-    "url": "https://github.com/marceloavila11/QualiLife-AI",
-    "image1": "/projects/qualilife1.png",
-    "image2": "/projects/qualilife2.png",
-    "image3": "/projects/qualilife3.png"
-  },
-  {
-    "title": "FinScope AI",
-    "desc": "Plataforma de análisis financiero inteligente que combina visualización avanzada, IA generativa y análisis de tendencias. Desarrollada con React, TypeScript y Vite en el frontend y FastAPI en el backend. Incluye recomendaciones inteligentes, resúmenes automáticos y predicciones de ahorro.",
-    "tech": ["FastAPI", "React", "TypeScript", "MongoDB", "Gemini API", "TailwindCSS", "AWS"],
-    "url": "https://github.com/marceloavila11/FinScope-AI",
-    "image1": "/projects/finscope1.png",
-    "image2": "/projects/finscope2.png",
-    "image3": "/projects/finscope3.png"
-  },
-  {
     "title": "CloudOps Vision",
-    "desc": "Plataforma de observabilidad y despliegue inteligente en entornos cloud. Implementa monitoreo centralizado con Prometheus y Grafana, despliegues automatizados con Docker y Kubernetes, y alertas proactivas mediante IA ligera.",
-    "tech": ["Docker", "Kubernetes", "Prometheus", "Grafana", "Python", "React", "AWS ECS"],
+    "desc": "Plataforma integral de observabilidad, despliegue inteligente y monitoreo cloud-native. Implementa métricas, logs, tracing, autoscaling y alertas en entornos Kubernetes con un pipeline DevOps empresarial.",
+    "tech": [
+      "Docker",
+      "Kubernetes",
+      "Prometheus",
+      "Grafana",
+      "Alertmanager",
+      "Loki",
+      "Tempo",
+      "Python",
+      "FastAPI",
+      "React",
+      "Helm",
+      "AWS ECS",
+      "AWS ECR",
+      "GitHub Actions",
+      "Terraform"
+    ],
     "url": "https://github.com/marceloavila11/CloudOps-Vision",
     "image1": "/projects/cloudops1.png",
     "image2": "/projects/cloudops2.png",
     "image3": "/projects/cloudops3.png"
   },
+
   {
-    "title": "CreditIQ",
-    "desc": "Motor de evaluación de riesgo crediticio con explicabilidad de modelos (XAI). Utiliza pipelines MLOps para entrenar, validar y desplegar modelos de clasificación crediticia, proporcionando interpretabilidad con SHAP y monitoreo con MLflow.",
-    "tech": ["Python", "FastAPI", "scikit-learn", "SHAP", "MLflow", "React"],
-    "url": "https://github.com/marceloavila11/CreditIQ",
-    "image1": "/projects/creditiq1.png",
-    "image2": "/projects/creditiq2.png",
-    "image3": "/projects/creditiq3.png"
+    "title": "CityPulse AI",
+    "desc": "Sistema de inteligencia urbana con datos en tiempo real integrados desde tráfico, transporte, clima y seguridad. Utiliza ingesta de eventos con Kafka, análisis geoespacial, predicción de patrones urbanos y un frontend con mapas interactivos avanzados.",
+    "tech": [
+      "Next.js 15",
+      "TypeScript",
+      "TailwindCSS",
+      "Node.js",
+      "NestJS",
+      "Kafka",
+      "Zookeeper",
+      "PostgreSQL",
+      "PostGIS",
+      "Redis",
+      "Leaflet",
+      "Mapbox",
+      "WebSockets",
+      "Python Workers",
+      "Docker",
+      "GitHub Actions",
+      "AWS Lambda",
+      "AWS RDS"
+    ],
+    "url": "",
+    "image1": "/projects/citypulse1.png",
+    "image2": "/projects/citypulse2.png",
+    "image3": "/projects/citypulse3.png"
   },
+
   {
-    "title": "QA Insight",
-    "desc": "Sistema predictivo de calidad continua que combina analítica de datos, automatización QA y visualización de métricas desde Azure DevOps. Permite analizar defectos, cobertura y tendencias mediante dashboards inteligentes.",
-    "tech": ["Python", "FastAPI", "React", "Azure DevOps API", "Pandas", "Plotly"],
-    "url": "https://github.com/marceloavila11/QA-Insight",
-    "image1": "/projects/qainsight1.png",
-    "image2": "/projects/qainsight2.png",
-    "image3": "/projects/qainsight3.png"
+    "title": "JourneyMap AI",
+    "desc": "Planificador de viajes inteligente con IA que genera rutas óptimas, itinerarios personalizados, mapas interactivos, predicciones climáticas y recomendaciones basadas en IA. Integración con APIs de vuelos, clima, hoteles y transporte.",
+    "tech": [
+      "Astro",
+      "React Components",
+      "Node.js",
+      "Express",
+      "Mapbox GL",
+      "Supabase",
+      "OpenWeather API",
+      "GeoJSON",
+      "TailwindCSS",
+      "TypeScript",
+      "IA Generativa (RAG)",
+      "Serverless Functions",
+      "Docker",
+      "AWS Lambda",
+      "AWS S3"
+    ],
+    "url": "",
+    "image1": "/projects/journeymap1.png",
+    "image2": "/projects/journeymap2.png",
+    "image3": "/projects/journeymap3.png"
   },
+
   {
-    "title": "DataScope",
-    "desc": "Dashboard interactivo de analítica de datos con soporte para carga de archivos CSV, visualizaciones dinámicas y estadísticas básicas. Está diseñado para mostrar integración de React con librerías de visualización y Python (FastAPI + Pandas) para análisis rápido.",
-    "tech": ["FastAPI", "React", "Pandas", "Plotly", "TypeScript"],
-    "url": "https://github.com/marceloavila11/DataScope",
-    "image1": "/projects/datascope1.png",
-    "image2": "/projects/datascope2.png",
-    "image3": "/projects/datascope3.png"
+    "title": "MediFlow AI",
+    "desc": "Plataforma de salud preventiva con análisis de síntomas, evaluación de riesgos, predicción de enfermedades y recomendaciones generadas con IA. Incluye historial clínico, dashboards de progreso y modelos TensorFlow.js.",
+    "tech": [
+      "Angular 17",
+      "Node.js",
+      "NestJS",
+      "MongoDB",
+      "Mongoose",
+      "TensorFlow.js",
+      "Embeddings IA",
+      "JWT + RBAC",
+      "Tailwind + Angular Material",
+      "Docker",
+      "NGINX",
+      "GitHub Actions",
+      "AWS EC2",
+      "AWS CloudWatch"
+    ],
+    "url": "",
+    "image1": "/projects/mediflow1.png",
+    "image2": "/projects/mediflow2.png",
+    "image3": "/projects/mediflow3.png"
   },
+
+  {
+    "title": "SkillForge AI",
+    "desc": "Plataforma de crecimiento profesional basada en grafos de conocimiento. Analiza habilidades, construye roadmaps personalizados y utiliza IA generativa para generar planes de aprendizaje adaptativos.",
+    "tech": [
+      "React",
+      "Vite",
+      "TailwindCSS",
+      "Node.js",
+      "Express",
+      "Neo4j",
+      "Cypher",
+      "IA Generativa",
+      "Auth0",
+      "Redis Cache",
+      "Docker Compose",
+      "Railway Deployment"
+    ],
+    "url": "",
+    "image1": "/projects/skillforge1.png",
+    "image2": "/projects/skillforge2.png",
+    "image3": "/projects/skillforge3.png"
+  },
+
+  {
+    "title": "SportMetrics Pro",
+    "desc": "Ecosistema Full Stack de inteligencia deportiva y predicción con IA. Implementa pipelines de Ingeniería de Datos (ETL) para simulación histórica, modelos matemáticos (Poisson) para pronósticos de partidos y dashboards interactivos de alto rendimiento.",
+    "tech": [
+      "Vue 3",
+      "Node.js",
+      "Express",
+      "Supabase",
+      "Predictive ML",
+      "Vercel",
+      "Render"
+    ],
+    "url": "https://sportmetrics-pro.vercel.app",
+    "image1": "/projects/sportmetrics1.png",
+    "image2": "/projects/sportmetrics2.png",
+    "image3": "/projects/sportmetrics3.png"
+  },
+
+  {
+    "title": "QualiLife AI",
+    "desc": "Plataforma de inteligencia global que analiza bienestar, desarrollo humano e indicadores multidimensionales asistidos por IA generativa. Incluye mapas, comparativas y análisis avanzado.",
+    "tech": [
+      "FastAPI",
+      "Astro",
+      "MongoDB",
+      "Python",
+      "IA Generativa",
+      "TypeScript",
+      "TailwindCSS",
+      "AWS"
+    ],
+    "url": "https://github.com/marceloavila11/QualiLife-AI",
+    "image1": "/projects/qualilife1.png",
+    "image2": "/projects/qualilife2.png",
+    "image3": "/projects/qualilife3.png"
+  },
+
+  {
+    "title": "FinScope AI",
+    "desc": "Plataforma inteligente de análisis financiero que combina visualización avanzada, IA generativa y análisis de tendencias para mejorar la toma de decisiones personales.",
+    "tech": [
+      "React",
+      "FastAPI",
+      "MongoDB",
+      "TypeScript",
+      "TailwindCSS",
+      "Gemini API",
+      "AWS"
+    ],
+    "url": "https://github.com/marceloavila11/FinScope-AI",
+    "image1": "/projects/finscope1.png",
+    "image2": "/projects/finscope2.png",
+    "image3": "/projects/finscope3.png"
+  },
+
   {
     "title": "TaskPilot",
-    "desc": "Aplicación web full stack para la gestión de tareas, desarrollada con Flask y Vue 3. Incluye autenticación JWT, CRUD completo, persistencia en SQLite y despliegue con Docker. Demuestra principios de arquitectura REST, diseño limpio de API y buenas prácticas de seguridad en entornos modernos de desarrollo web.",
-    "tech": ["Flask", "Vue 3", "JavaScript", "SQLite", "TailwindCSS", "Docker"],
+    "desc": "Aplicación full-stack de gestión de tareas con Flask y Vue 3. Implementa JWT, CRUD completo, dockerización y arquitectura REST limpia.",
+    "tech": [
+      "Flask",
+      "Vue 3",
+      "JavaScript",
+      "Python",
+      "SQLite",
+      "TailwindCSS",
+      "Docker"
+    ],
     "url": "https://github.com/marceloavila11/TaskPilot",
     "image1": "/projects/taskpilot1.png",
     "image2": "/projects/taskpilot2.png",
