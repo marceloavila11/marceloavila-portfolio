@@ -24,15 +24,12 @@
     { "name": "MySQL", "icon": "SiMysql" },
     { "name": "MongoDB", "icon": "SiMongodb" },
     { "name": "SQLite", "icon": "SiSqlite" },
-    { "name": "Supabase", "icon": "SiSupabase" },
     { "name": "APIs / REST", "icon": "FaServer" }
   ],
 
   "devops": [
     { "name": "AWS", "icon": "FaAws" },
     { "name": "Docker", "icon": "FaDocker" },
-    { "name": "Vercel", "icon": "SiVercel" },
-    { "name": "Render", "icon": "SiRender" },
     { "name": "Azure DevOps", "icon": "VscAzureDevops" },
     { "name": "Git", "icon": "FaGitAlt" },
     { "name": "GitHub Actions", "icon": "SiGithubactions" },
